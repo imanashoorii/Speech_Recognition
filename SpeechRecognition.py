@@ -20,3 +20,8 @@ def speak(audio_string):
     r = random.randint(1, 10000000)
     # Output file
     audio_file = 'audio-' + str(r) + '.mp3'
+    # Plays audio_file
+    playsound.playsound(audio_file)
+    # remove the file after stop
+    os.remove(audio_file)
+
