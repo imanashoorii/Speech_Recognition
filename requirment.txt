@@ -8,7 +8,7 @@ gTTS-token==1.1.3
 idna==2.10
 Pillow==8.0.1
 playsound==1.2.2
-PyAudio @ file:///C:/Users/iman/Downloads/PyAudio-0.2.11-cp39-cp39-win_amd64.whl
+PyAudio
 python-dateutil==2.8.1
 requests==2.24.0
 six==1.15.0
