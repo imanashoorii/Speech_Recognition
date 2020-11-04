@@ -8,8 +8,16 @@ import pyaudio
 import webbrowser
 import os
 import playsound
-import random
 from gtts import gTTS
+
+# root window
+
+root = tk.ThemedTk()
+root.get_themes()
+root.set_theme('scidgreen')
+root.resizable(0, 0)
+root.configure(background='white')
+root.title('Voice Assistant')
 
 
 def speak(audio_string):
@@ -66,4 +74,7 @@ def task():
     respond(voice_data)
 
 
-task()
+task_btn = ttk.Button(root, text='Start', width=10, command=task).grid(row=0, column=0, ipady=20, ipadx=90)
+save_btn = ttk.Button(root, text='Exit', width=10, command=root.destroy).grid(row=1, column=0, ipady=20, ipadx=90)
+root.mainloop()
+
