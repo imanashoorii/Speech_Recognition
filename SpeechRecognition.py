@@ -1,6 +1,4 @@
 from tkinter import *
-
-import task as task
 from ttkthemes import themed_tk as tk
 from tkinter import ttk
 from time import ctime
@@ -59,11 +57,13 @@ def respond(voice_data):
         speak('Here is your location ' + str(location) + '/&amp;')
     if 'exit' in voice_data:
         speak("bye")
+        root.destroy()
 
 
 def task():
     speak('Hi ! I am Iman, your new assistant . How can I help you ?')
     voice_data = record_audio()
     respond(voice_data)
+
 
 task()
