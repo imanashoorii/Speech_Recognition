@@ -1,5 +1,5 @@
 # Speech Recognition
-This Software is a simple Voice Assistant
+This Program is a simple Voice Assistant
 
 
 Dependencies:
